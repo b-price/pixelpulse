@@ -9,7 +9,7 @@ export default function TopBar(){
                 <Link to={"/"} className="h1 mb-0 link-underline link-underline-opacity-0">PixelPulse Arcade</Link>
             </Nav>
             <Nav>
-                <Link to={'/settings'} className="h1 mb-0 link-underline link-underline-opacity-0 link-opacity-50-hover">
+                <Link to={'/settings'} className="h1 mb-0 me-2 link-underline link-underline-opacity-0">
                     <i className="bi bi-list"></i>
                 </Link>
             </Nav>

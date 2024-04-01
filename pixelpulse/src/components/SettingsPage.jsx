@@ -7,6 +7,23 @@ export default function SettingsPage(){
     function openAreYouSure() {
         setShowAreYouSure(true)
     }
+    const [isDark, setIsDark] = useState(dark)
+    function onSwitchMode(){
+        let html = document.documentElement
+        if (isDark){
+            html.setAttribute('data-bs-theme', 'light')
+            setIsDark(false)
+        }
+        else {
+            html.setAttribute('data-bs-theme', 'dark')
+            setIsDark(true)
+        }
+    }
+
+    function dark(){
+        let html = document.documentElement
+        return html.getAttribute('data-bs-theme') === 'dark';
+    }
     function AreYouSure({showAreYouSure, onClose}) {
         return(
             <Modal show={showAreYouSure} onHide={onClose} >
@@ -54,7 +71,8 @@ export default function SettingsPage(){
                             type="switch"
                             label="Dark mode"
                             className="mb-3"
-
+                            checked={isDark}
+                            onChange={() => onSwitchMode()}
                         />
 
                         <Form>
