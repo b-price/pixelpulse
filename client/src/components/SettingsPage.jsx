@@ -52,7 +52,7 @@ export default function SettingsPage(){
     return(
         <Container>
             <Card className={"my-5"}>
-                <Card.Header as="h3">
+                <Card.Header as={'h3'} >
                     Settings
                     <Link to={'/'}>
                         <Button variant="outline-primary" className="float-end">Back</Button>
@@ -114,7 +114,9 @@ export default function SettingsPage(){
                     </Card.Body>
                 </div>
                 <Card.Footer>
-                    <Button variant="primary">Logout</Button>
+                    <Link to={'/login'}>
+                        <Button variant="primary">Logout</Button>
+                    </Link>
                 </Card.Footer>
             </Card>
             <AreYouSure showAreYouSure={showAreYouSure} onClose={() => setShowAreYouSure(false)} />
