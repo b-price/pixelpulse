@@ -1,7 +1,9 @@
 import { Button, Container, Row, Card, Form, Col, Modal } from "react-bootstrap";
 import { useState } from "react";
+import {Link} from "react-router-dom";
 
-
+//TODO: add actual game settings
+//TODO: use context for db calls
 export default function SettingsPage(){
     const [showAreYouSure, setShowAreYouSure] = useState(false)
     function openAreYouSure() {
@@ -49,23 +51,25 @@ export default function SettingsPage(){
 
     return(
         <Container>
-            <Card>
+            <Card className={"my-5"}>
                 <Card.Header as="h3">
                     Settings
-                    <Button variant="outline-primary" className="float-end">Back</Button>
+                    <Link to={'/'}>
+                        <Button variant="outline-primary" className="float-end">Back</Button>
+                    </Link>
                 </Card.Header>
                 <div style={{ maxHeight: "60vh", overflowY: "auto" }}>
                     <Card.Header as="h5">Global Game Settings</Card.Header>
                     <Card.Body>
                         <Form>
-                            <Form.Group controlId="favoriteOnly">
+                            <Form.Group controlId="fullscreen">
                                 <Form.Check type="switch" label="Launch in fullscreen" />
                             </Form.Group>
                         </Form>
+                        <Form.Check type={"switch"} label={"Do not appear on high scores"} />
                     </Card.Body>
                     <Card.Header as="h5">Account Settings</Card.Header>
                     <Card.Body>
-
                         <Form.Check
                             id="modeSwitch"
                             type="switch"
@@ -74,7 +78,6 @@ export default function SettingsPage(){
                             checked={isDark}
                             onChange={() => onSwitchMode()}
                         />
-
                         <Form>
                             <Row className="align-items-end mb-4">
                                 <Form.Group as={Col} controlId="updateEmail" className="col-7 col-sm-6">
@@ -84,7 +87,6 @@ export default function SettingsPage(){
                                 <Col>
                                     <Button variant="secondary" type="submit">Update</Button>
                                 </Col>
-
                             </Row>
                         </Form>
                         <Form>

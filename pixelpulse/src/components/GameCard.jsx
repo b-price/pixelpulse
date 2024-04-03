@@ -8,12 +8,12 @@ export default function GameCard(props) {
             <Card.Img className="img-fluid border border-2" variant="top" src={props.imageSrc} />
             <Card.Body>
                 <Accordion>
-                    <Accordion.Item eventKey={props.number}>
+                    <Accordion.Item eventKey={props.id}>
                         <Accordion.Header><h5>{props.name}</h5></Accordion.Header>
                         <Accordion.Body>
                             <p><em>{props.genre}</em></p>
                             <p>{props.desc}</p>
-                            <Button variant="primary" onClick="">Play!</Button>
+                            <Button variant="primary" onClick={""/*TODO: Pass in function to open game*/}>Play!</Button>
                         </Accordion.Body>
                     </Accordion.Item>
                 </Accordion>
