@@ -7,7 +7,7 @@ export default function TopBar(){
             <Nav className={"mx-auto align-middle"} >
                 <Link to={"/"} className="h1 mb-0 link-underline link-underline-opacity-0">PixelPulse Arcade</Link>
             </Nav>
-            <div className={'me-3'}>
+            <div className={'mx-3'}>
                 <Navbar.Toggle aria-controls={"offcanvasNavbar-expand-false"}/>
                 <Navbar.Offcanvas placement={'end'} >
                     <Offcanvas.Header closeButton>
