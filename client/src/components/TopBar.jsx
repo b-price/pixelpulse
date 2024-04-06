@@ -19,7 +19,7 @@ export default function TopBar(){
                             <Nav.Link href={'/'}>Home</Nav.Link>
                             <Nav.Link href={'/settings'}>Settings</Nav.Link>
                             <Nav.Link href={'/highscores'}>High Scores</Nav.Link>
-                            <Nav.Link href={'/'}>Log Out</Nav.Link>
+                            <Nav.Link href={'/login'}>Log Out</Nav.Link>
                         </Nav>
                     </Offcanvas.Body>
                 </Navbar.Offcanvas>

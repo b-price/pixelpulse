@@ -7,9 +7,10 @@ import {Link} from "react-router-dom";
 const games = [
     {
         id:"0",
-        name:"StupidGame",
+        name:"Stupid Game",
         genre:"Sports",
         desc:"Catch cool animals and battle them.",
+        players:"1",
         imageSrc:"/src/assets/pokered.jpeg"
     },
     {
@@ -26,7 +27,6 @@ const games = [
         desc:"Catch cool animals and battle them.",
         imageSrc:"/src/assets/pokered.jpeg"
     },
-
 ]
 
 export default function MainPage(){
