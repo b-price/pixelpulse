@@ -3,19 +3,19 @@ import GameCard from "./GameCard.jsx";
 import {Link} from "react-router-dom";
 
 //TODO: Put the actual games in here. Or read them from the db
-//TODO: Add link to play the games to each object
+
 const games = [
     {
         id:"0",
-        name:"Pokemon Red",
-        genre:"RPG",
+        name:"StupidGame",
+        genre:"Sports",
         desc:"Catch cool animals and battle them.",
         imageSrc:"/src/assets/pokered.jpeg"
     },
     {
         id:"1",
-        name:"Pokemon Red",
-        genre:"RPG",
+        name:"Crate",
+        genre:"Box",
         desc:"Catch cool animals and battle them.",
         imageSrc:"/src/assets/pokered.jpeg"
     },

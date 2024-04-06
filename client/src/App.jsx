@@ -7,6 +7,7 @@ import HighScoresPage from "./components/HighScoresPage.jsx";
 import Login from "./components/Login.jsx";
 import ForgotPassword from "./components/ForgotPassword.jsx";
 import SignUp from "./components/SignUp.jsx";
+import GamePage from "./components/GamePage.jsx";
 
 //TODO: Add private route for MainPage after Login is implemented?
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <TopBar />
         <Routes>
             <Route exact path="/" element={<MainPage />} />
+            <Route path="/game" element={<GamePage />} />
             <Route path="/settings" element={<SettingsPage />} />
             <Route path="/highscores" element={<HighScoresPage />} />
             <Route path="/login" element={<Login />} />

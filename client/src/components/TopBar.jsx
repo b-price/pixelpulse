@@ -1,6 +1,7 @@
 import {Nav, Navbar, Offcanvas} from "react-bootstrap";
 import {Link} from "react-router-dom";
 
+//TODO: Get the title to be centered regardless of toggle button
 export default function TopBar(){
     return(
         <Navbar sticky={"top"} bg={"danger"} data-bs-theme={'dark'} className={'text-light'} expand={false}>
