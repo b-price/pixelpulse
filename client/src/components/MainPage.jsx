@@ -48,7 +48,7 @@ export default function MainPage(){
                 <Row className={"d-none d-lg-flex justify-content-evenly py-5 sticky-bottom "}>
                     <div className={'w-50'}>
                         <Link to={'/highscores'}>
-                            <Button variant={"primary"} size={"lg"} className={'w-100'}>
+                            <Button variant={"success"} size={"lg"} className={'w-100'}>
                                 <h2 className="mb-0">HIGH SCORES</h2>
                             </Button>
                         </Link>

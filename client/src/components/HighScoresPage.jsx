@@ -100,7 +100,7 @@ export default function HighScoresPage(){
                 <Card.Header as="h3">
                     High Scores
                     <Link to={'/'}>
-                        <Button variant="outline-primary" className="float-end">Back</Button>
+                        <Button variant="outline-success" className="float-end">Back</Button>
                     </Link>
                 </Card.Header>
                 <Card.Body>

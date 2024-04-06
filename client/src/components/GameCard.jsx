@@ -18,7 +18,7 @@ export default function GameCard(props) {
                             <p><em>{props.genre}</em></p>
                             <p>{props.desc}</p>
                             <Link to={'/game'} state={pathName}>
-                                <Button variant="primary">Play!</Button>
+                                <Button variant="success">Play!</Button>
                             </Link>
                         </Accordion.Body>
                     </Accordion.Item>

@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 //TODO: Get the title to be centered regardless of toggle button
 export default function TopBar(){
     return(
-        <Navbar sticky={"top"} bg={"danger"} data-bs-theme={'dark'} className={'text-light'} expand={false}>
+        <Navbar sticky={"top"} bg={"success"} data-bs-theme={'dark'} className={'text-light'} expand={false}>
             <Nav className={"mx-auto align-middle"} >
                 <Link to={"/"} className="h1 mb-0 link-underline link-underline-opacity-0">PixelPulse Arcade</Link>
             </Nav>
