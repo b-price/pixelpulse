@@ -36,7 +36,7 @@ export default function ForgotPassword() {
                     <Form onSubmit={""}>
                         <Form.Group id="email">
                             <Form.Label>Email</Form.Label>
-                            <Form.Control type="email" ref={emailRef} required />
+                            <Form.Control type="email" ref={emailRef} required/>
                         </Form.Group>
                         <Button variant={'success'} disabled={loading} className="w-100 my-3" type="submit">
                             Reset Password
@@ -45,11 +45,11 @@ export default function ForgotPassword() {
                     <div className="w-100 text-center mt-3">
                         <Link to="/login">Login</Link>
                     </div>
+                    <div className="w-100 text-center mt-2">
+                        Need an account? <Link to="/signup">Sign Up</Link>
+                    </div>
                 </Card.Body>
             </Card>
-            <div className="w-100 text-center mt-2">
-                Need an account? <Link to="/signup">Sign Up</Link>
-            </div>
         </>
     )
 }

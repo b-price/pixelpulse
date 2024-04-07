@@ -9,16 +9,16 @@ const games = [
         id:"0",
         name:"Stupid Game",
         genre:"Sports",
-        desc:"Catch cool animals and battle them.",
+        desc:"You are the ball.",
         players:"1",
-        imageSrc:"/src/assets/pokered.jpeg"
+        imageSrc:"/src/assets/stupidgame.png"
     },
     {
         id:"1",
         name:"Crate",
-        genre:"Box",
-        desc:"Catch cool animals and battle them.",
-        imageSrc:"/src/assets/pokered.jpeg"
+        genre:"Simulation",
+        desc:"Watch a crate have a good time.",
+        imageSrc:"/src/assets/crate.png"
     },
     {
         id:"2",
@@ -31,8 +31,8 @@ const games = [
 
 export default function MainPage(){
     return(
-        <>
-            <Container>
+
+            <Container >
                 <Row className="d-flex justify-content-evenly flex-wrap py-5">
                     {games.map((game, i) =>
                         <GameCard
@@ -45,16 +45,16 @@ export default function MainPage(){
                         />
                     )}
                 </Row>
-                <Row className={"d-none d-lg-flex justify-content-evenly py-5 sticky-bottom "}>
+                <Row className={"d-none d-lg-flex justify-content-evenly py-5 sticky-bottom"}>
                     <div className={'w-50'}>
                         <Link to={'/highscores'}>
-                            <Button variant={"success"} size={"lg"} className={'w-100'}>
+                            <Button variant={"danger"} size={"lg"} className={'w-100'}>
                                 <h2 className="mb-0">HIGH SCORES</h2>
                             </Button>
                         </Link>
                     </div>
                 </Row>
             </Container>
-        </>
+
     )
 }

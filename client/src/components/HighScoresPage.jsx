@@ -95,7 +95,7 @@ const game2scores = [
 export default function HighScoresPage(){
 
     return (
-        <Container>
+        <Container className={'overflow-scroll h-100'}>
             <Card className={"my-5"}>
                 <Card.Header as="h3">
                     High Scores

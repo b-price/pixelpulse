@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react"
-import { Form, Button, Card, Alert } from "react-bootstrap"
+import {Form, Button, Card, Alert, Container} from "react-bootstrap"
 // import { useAuth } from "../contexts/AuthContext"
 import { Link } from "react-router-dom"
 
@@ -28,7 +28,7 @@ export default function Login() {
     // }
 
     return (
-        <>
+        <Container>
             <Card className={'w-75 mx-auto mt-5'}>
                 <Card.Body>
                     <h2 className="text-center mb-4">Log In</h2>
@@ -36,11 +36,11 @@ export default function Login() {
                     <Form onSubmit={""}>
                         <Form.Group id="email">
                             <Form.Label>Email</Form.Label>
-                            <Form.Control type="email" ref={emailRef} required />
+                            <Form.Control type="email" ref={emailRef} required/>
                         </Form.Group>
                         <Form.Group id="password">
                             <Form.Label>Password</Form.Label>
-                            <Form.Control type="password" ref={passwordRef} required />
+                            <Form.Control type="password" ref={passwordRef} required/>
                         </Form.Group>
                         <Button variant={'success'} disabled={loading} className="w-100 my-3" type="submit">
                             Log In
@@ -49,11 +49,12 @@ export default function Login() {
                     <div className="w-100 text-center mt-3">
                         <Link to="/forgot-password">Forgot Password?</Link>
                     </div>
+                    <div className="w-100 text-center mt-2">
+                        Need an account? <Link to="/signup">Sign Up</Link>
+                    </div>
                 </Card.Body>
             </Card>
-            <div className="w-100 text-center mt-2">
-                Need an account? <Link to="/signup">Sign Up</Link>
-            </div>
-        </>
+
+        </Container>
     )
 }

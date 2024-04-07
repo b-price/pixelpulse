@@ -2,6 +2,7 @@ import {Nav, Navbar, Offcanvas} from "react-bootstrap";
 import {Link} from "react-router-dom";
 
 //TODO: Get the title to be centered regardless of toggle button
+//TODO: Fix bug where offcanvas resets dark mode
 export default function TopBar(){
     return(
         <Navbar sticky={"top"} bg={"success"} data-bs-theme={'dark'} className={'text-light'} expand={false}>

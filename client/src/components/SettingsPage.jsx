@@ -50,7 +50,7 @@ export default function SettingsPage(){
     }
 
     return(
-        <Container>
+        <Container >
             <Card className={"my-5"}>
                 <Card.Header as={'h3'} >
                     Settings
