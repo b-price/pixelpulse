@@ -63,10 +63,10 @@ export default function SettingsPage(){
                     <Card.Body>
                         <Form>
                             <Form.Group controlId="fullscreen">
-                                <Form.Check type="switch" label="Launch in fullscreen" />
+                                <Form.Check type="switch" label="Launch games in fullscreen" />
                             </Form.Group>
                         </Form>
-                        <Form.Check type={"switch"} label={"Do not appear on high scores"} />
+                        <Form.Check type={"switch"} label={"Do not appear on high score board"} />
                     </Card.Body>
                     <Card.Header as="h5">Account Settings</Card.Header>
                     <Card.Body>

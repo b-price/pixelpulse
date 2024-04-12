@@ -32,7 +32,7 @@ const games = [
 export default function MainPage(){
     return(
 
-            <Container >
+            <Container className={'overflow-scroll z-0'} >
                 <Row className="d-flex justify-content-evenly flex-wrap py-5">
                     {games.map((game, i) =>
                         <GameCard
