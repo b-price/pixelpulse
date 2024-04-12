@@ -13,12 +13,12 @@ export default function GameCard(props) {
             <Card.Body>
                 <Accordion>
                     <Accordion.Item eventKey={props.id}>
-                        <Accordion.Header><h5>{props.name}</h5></Accordion.Header>
+                        <Accordion.Header><h5 className={'mb-0'}>{props.name}</h5></Accordion.Header>
                         <Accordion.Body>
                             <p><em>{props.genre}</em></p>
                             <p>{props.desc}</p>
                             <Link to={'/game'} state={pathName}>
-                                <Button variant="primary">Play!</Button>
+                                <Button variant="success">Play!</Button>
                             </Link>
                         </Accordion.Body>
                     </Accordion.Item>

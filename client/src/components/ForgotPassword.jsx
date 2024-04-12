@@ -36,20 +36,20 @@ export default function ForgotPassword() {
                     <Form onSubmit={""}>
                         <Form.Group id="email">
                             <Form.Label>Email</Form.Label>
-                            <Form.Control type="email" ref={emailRef} required />
+                            <Form.Control type="email" ref={emailRef} required/>
                         </Form.Group>
-                        <Button disabled={loading} className="w-100 my-3" type="submit">
+                        <Button variant={'success'} disabled={loading} className="w-100 my-3" type="submit">
                             Reset Password
                         </Button>
                     </Form>
                     <div className="w-100 text-center mt-3">
                         <Link to="/login">Login</Link>
                     </div>
+                    <div className="w-100 text-center mt-2">
+                        Need an account? <Link to="/signup">Sign Up</Link>
+                    </div>
                 </Card.Body>
             </Card>
-            <div className="w-100 text-center mt-2">
-                Need an account? <Link to="/signup">Sign Up</Link>
-            </div>
         </>
     )
 }

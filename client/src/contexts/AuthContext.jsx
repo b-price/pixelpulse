@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from "react"
 import { auth } from "../firebase"
-//TODO: replace firebase auth with mongodb
+//TODO: replace firebase auth with express api
 const AuthContext = React.createContext()
 
 export function useAuth() {

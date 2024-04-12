@@ -50,12 +50,12 @@ export default function SettingsPage(){
     }
 
     return(
-        <Container>
+        <Container >
             <Card className={"my-5"}>
                 <Card.Header as={'h3'} >
                     Settings
                     <Link to={'/'}>
-                        <Button variant="outline-primary" className="float-end">Back</Button>
+                        <Button variant="outline-success" className="float-end">Back</Button>
                     </Link>
                 </Card.Header>
                 <div style={{ maxHeight: "60vh", overflowY: "auto" }}>
@@ -63,10 +63,10 @@ export default function SettingsPage(){
                     <Card.Body>
                         <Form>
                             <Form.Group controlId="fullscreen">
-                                <Form.Check type="switch" label="Launch in fullscreen" />
+                                <Form.Check type="switch" label="Launch games in fullscreen" />
                             </Form.Group>
                         </Form>
-                        <Form.Check type={"switch"} label={"Do not appear on high scores"} />
+                        <Form.Check type={"switch"} label={"Do not appear on high score board"} />
                     </Card.Body>
                     <Card.Header as="h5">Account Settings</Card.Header>
                     <Card.Body>
@@ -115,7 +115,7 @@ export default function SettingsPage(){
                 </div>
                 <Card.Footer>
                     <Link to={'/login'}>
-                        <Button variant="primary">Logout</Button>
+                        <Button variant="success">Logout</Button>
                     </Link>
                 </Card.Footer>
             </Card>
